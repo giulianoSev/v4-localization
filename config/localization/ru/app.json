@@ -85,6 +85,7 @@
       "DISCOUNT": "Скидка",
       "DISMISS": "Убрать",
       "DONE": "Готово",
+      "DYDX_CHAIN": "Блокчейн dYdX",
       "EMAIL": "Электронная почта",
       "ENDED": "Завершено",
       "EQUITY": "ДОЛЯ В ПОЗИЦИИ",
@@ -366,6 +367,7 @@
     "ONBOARDING": {
       "INITIATED_DEPOSIT": "Инициированное внесение средств",
       "INITIATED_WITHDRAWAL": "Инициированный вывод средств",
+      "INITIATED_TRANSFEROUT": "Инициированный перевод",
       "BRIDGING_TOKENS": "Бриджинг токенов",
       "DEPOSIT_TO_DYDX": "Внести в dYdX",
       "DEPOSIT_TO_DESTINATION": "Внести в {DESTINATION_CHAIN}",
@@ -373,6 +375,8 @@
       "DEPOSIT_ALERT_SUBTITLE": "Проверить статус",
       "WITHDRAWAL_ALERT_TITLE": "У вас есть средства в размере {PENDING_WITHDRAWALS}, ожидающие вывода в {DESTINATION_CHAIN}.",
       "WITHDRAWAL_ALERT_SUBTITLE": "Проверить статус",
+      "TRANSFEROUT_ALERT_TITLE": "У вас есть ожидающий перевод: {PENDING_TRANSFERS} {TOKEN}.",
+      "TRANSFEROUT_ALERT_SUBTITLE": "Проверить статус",
       "ABOUT_WALLETS": "О кошельках",
       "ACKNOWLEDGE_TERMS": "Принять условия",
       "API_KEYS_NOT_FOUND": "Ключ API не найден",
@@ -745,6 +749,11 @@
       "PERCENT_TRAIL": "{PERCENT}% скользения",
       "PLACE_LIMIT_ORDER": "Разместить лимит-ордер",
       "PLACE_MARKET_ORDER": "Разместить рыночный ордер",
+      "PLACE_STOP_LIMIT_ORDER": "Разместить ордер стоп-лимит",
+      "PLACE_STOP_MARKET_ORDER": "Разместить ордер стоп-маркет",
+      "PLACE_TAKE_PROFIT_LIMIT_ORDER": "Разместить лимитный ордер тейк-профит",
+      "PLACE_TAKE_PROFIT_MARKET_ORDER": "Разместить рыночный тэйк-профит ордер",
+      "PLACE_TRAILING_STOP_ORDER": "Размет ордер со скользящим стопом",
       "PLACE_ORDER": "Разместить {ORDER}",
       "PLACE_SIMPLE_TRADE": "Разместить рыночный ордер для {NAME}",
       "PLACE_TRADE": "Разместить сделку",
@@ -1104,7 +1113,10 @@
       "DIRECTLY_TRANSFER": "Выполните прямой перевод средств на другой счет dYdX",
       "ETH_ADDRESS": "Адрес кошелька Ethereum",
       "PLEASE_CONFIRM_ADDRESS": "Прежде чем продолжить, проверьте и подтвердите правильность адреса.",
-      "SELECT_ADDRESS": "Введите или выберите адрес"
+      "SELECT_ADDRESS": "Введите или выберите адрес",
+      "ADDRESS_FIELD": "Неверный адрес кошелька",
+      "INVALID_ADDRESS_TITLE": "Неверный адрес кошелька",
+      "INVALID_ADDRESS_BODY": "Введите правильный адрес блокчейна dYdX."
     },
     "DEPOSIT_WITH_FIAT": {
       "BANXA_SUPPORT_LINK": "Поддержка Banxa",
@@ -1211,6 +1223,16 @@
         "AND_MAKER_MARKET_SHARE": "и доля рынка мейкера",
         "TRADING_VOLUME": "Объем торговли"
     }
+  },
+  "CHAIN":{
+    "V3_MAINNET": "Мейннет версии V3",
+    "V3_GOERLI": "Стадии V3",
+    "V4_DEVNET": "V4, 1-разработка",
+    "V4_DEVNET_2": "V4, 2-разработка",
+    "V4_DEVNET_3": "V4, 3-разработка",
+    "V4_DEVNET_4": "V4, 4-разработка",
+    "V4_STAGING": "Стадии V4",
+    "V4_TESTNET2": "V4, публичный тестнет №2"
   },
   "ERRORS": {
     "GENERAL": {
