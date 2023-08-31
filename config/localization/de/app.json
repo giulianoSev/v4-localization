@@ -85,6 +85,7 @@
       "DISCOUNT": "Rabatt",
       "DISMISS": "Verwerfen",
       "DONE": "Fertig",
+      "DYDX_CHAIN": "dYdX Chain",
       "EMAIL": "E-Mail",
       "ENDED": "Beendet",
       "EQUITY": "Eigenkapital",
@@ -366,6 +367,7 @@
     "ONBOARDING": {
       "INITIATED_DEPOSIT": "Initiierte Einzahlung",
       "INITIATED_WITHDRAWAL": "Initiierte Auszahlung",
+      "INITIATED_TRANSFEROUT": "Initiierter Transfer",
       "BRIDGING_TOKENS": "Bridging Tokens",
       "DEPOSIT_TO_DYDX": "Einzahlung auf dYdX",
       "DEPOSIT_TO_DESTINATION": "Einzahlung auf {DESTINATION_CHAIN}",
@@ -373,6 +375,8 @@
       "DEPOSIT_ALERT_SUBTITLE": "Status prüfen",
       "WITHDRAWAL_ALERT_TITLE": "Sie haben  {PENDING_WITHDRAWALS}ausstehende Auszahlung auf {DESTINATION_CHAIN}.",
       "WITHDRAWAL_ALERT_SUBTITLE": "Status prüfen",
+      "TRANSFEROUT_ALERT_TITLE": "Sie haben einen ausstehenden Transfer von.{PENDING_TRANSFERS}{TOKEN}",
+      "TRANSFEROUT_ALERT_SUBTITLE": "Status prüfen",
       "ABOUT_WALLETS": "Über Wallets",
       "ACKNOWLEDGE_TERMS": "Bedingungen anerkennen",
       "API_KEYS_NOT_FOUND": "API-Schlüssel nicht gefunden",
@@ -743,8 +747,13 @@
       "PAYMENTS": "Zahlungen",
       "PENDING": "Ausstehend",
       "PERCENT_TRAIL": "{PERCENT} % Trail",
-      "PLACE_LIMIT_ORDER": "Platzieren Sie eine Limit-Order",
-      "PLACE_MARKET_ORDER": "Platzieren Sie eine Markt-Order",
+      "PLACE_LIMIT_ORDER": "Limit-Order platzieren",
+      "PLACE_MARKET_ORDER": "Market-Order platzieren",
+      "PLACE_STOP_LIMIT_ORDER": "Stop-Limit-Order platzieren",
+      "PLACE_STOP_MARKET_ORDER": "Stop-Market-Order platzieren",
+      "PLACE_TAKE_PROFIT_LIMIT_ORDER": "Take-Profit-Limit-Order platzieren",
+      "PLACE_TAKE_PROFIT_MARKET_ORDER": "Take-Profit-Market-Order platzieren",
+      "PLACE_TRAILING_STOP_ORDER": "Trailing-Stop-Order platzieren",
       "PLACE_ORDER": "{ORDER} platzieren",
       "PLACE_SIMPLE_TRADE": "Platzieren Sie eine Market-Order für {NAME}",
       "PLACE_TRADE": "Einen Trade platzieren",
@@ -1104,7 +1113,10 @@
       "DIRECTLY_TRANSFER": "Überweisen Sie Geld direkt auf ein anderes Konto bei dYdX",
       "ETH_ADDRESS": "Ethereum Wallet-Adresse",
       "PLEASE_CONFIRM_ADDRESS": "Bitte bestätigen Sie, dass dies die gewünschte Adresse ist, bevor Sie fortfahren.",
-      "SELECT_ADDRESS": "Adresse eingeben oder auswählen"
+      "SELECT_ADDRESS": "Adresse eingeben oder auswählen",
+      "ADDRESS_FIELD": "Ungültige Wallet-Adresse",
+      "INVALID_ADDRESS_TITLE": "Ungültige Wallet-Adresse",
+      "INVALID_ADDRESS_BODY": "Bitte geben Sie eine gültige dYdX-Kettenadresse ein."
     },
     "DEPOSIT_WITH_FIAT": {
       "BANXA_SUPPORT_LINK": "Banxa-Support",
@@ -1211,6 +1223,16 @@
         "AND_MAKER_MARKET_SHARE": "und Maker-Marktanteil",
         "TRADING_VOLUME": "Tradingvolumen"
     }
+  },
+  "CHAIN":{
+    "V3_MAINNET": "V3 Mainnet",
+    "V3_GOERLI": "V3 Staging",
+    "V4_DEVNET": "V4 Dev 1",
+    "V4_DEVNET_2": "V4 Dev 2",
+    "V4_DEVNET_3": "V4 Dev 3",
+    "V4_DEVNET_4": "V4 Dev 4",
+    "V4_STAGING": "V4 Staging",
+    "V4_TESTNET2": "V4 Öffentliches Testnet #2"
   },
   "ERRORS": {
     "GENERAL": {
