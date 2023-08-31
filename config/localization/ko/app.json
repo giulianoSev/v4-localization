@@ -85,6 +85,7 @@
       "DISCOUNT": "할인",
       "DISMISS": "해제",
       "DONE": "완료",
+      "DYDX_CHAIN": "dYdX 체인",
       "EMAIL": "이메일",
       "ENDED": "종료",
       "EQUITY": "자본",
@@ -288,7 +289,7 @@
       "MAKER_PRIMARY_DESCRIPTION": "MCD(다중 담보 다이) 시스템으로도 알려진 메이커 프로토콜을 통해 사용자는 '메이커 거버넌스'에서 승인한 담보 자산을 활용하여 다이를 생성할 수 있습니다. 메이커 거버넌스는 커뮤니티가 조직하고 운영하는 메이커 프로토콜의 다양한 측면을 관리하는 프로세스입니다.",
       "MAKER_SECONDARY_DESCRIPTION": "다이는 미국 달러에 소프트 페그된 탈중앙화 방식의 중립적인 담보화 암호화폐입니다. 낮은 변동성으로 인한 하이퍼인플레이션에 강한 다이는 누구에게나 어디에서나 경제적 자유 및 기회를 제공합니다.",
       "MONERO_PRIMARY_DESCRIPTION": "모네로는 비공개 및 검열 저항적 거래에 중점을 둔 선도적인 암호화폐입니다.",
-      "MONERO_SECONDARY_DESCRIPTION": "선택적으로 투명한 대안(예: 지캐시)과 달리 모네로는 기본적으로 모든 사용자가 익명인 유일한 암호화폐입니다. 3가지 중요한 기술인 스텔스 주소, 링 서명 및 RingCT를 사용하여 모든 거래의 발신자, 수신자 및 금액을 감춥니다.",
+      "MONERO_SECONDARY_DESCRIPTION": "선택적으로 투명한 다른 암호화폐(예: 지캐시)와 달리 모네로는 모든 사용자가 익명인 유일한 암호화폐입니다. 3가지 중요한 기술인 스텔스 주소, 링 서명 및 RingCT를 사용하여 모든 거래의 발신자, 수신자 및 금액을 감춥니다.",
       "NEAR_PRIMARY_DESCRIPTION": "NEAR은 사용 편의성을 위해 설계된 분할, 지분 증명, 레이어 1 블록체인을 기반으로 구축된 개발 플랫폼입니다.",
       "NEAR_SECONDARY_DESCRIPTION": "NEAR 토큰은 지분 증명 매커니즘을 통해 네트워크를 보호하는 데 사용됩니다.",
       "POLKADOT_PRIMARY_DESCRIPTION": "폴카닷은 개인 및 컨소시엄 체인, 무허가성 공공 네트워크, 오라클 및 아직 생성되지 않은 미래 기술을 연결하기 위해 개발되었습니다. 폴카닷은 독립된 블록체인이 폴카닷 릴레이 체인을 통해 신뢰할 수 없는 방식으로 정보 및 거래를 교환할 수 있는 인터넷 환경을 만듭니다.",
@@ -366,6 +367,7 @@
     "ONBOARDING": {
       "INITIATED_DEPOSIT": "발생한 입금",
       "INITIATED_WITHDRAWAL": "발생한 출금",
+      "INITIATED_TRANSFEROUT": "발생한 송금",
       "BRIDGING_TOKENS": "토큰 브릿지",
       "DEPOSIT_TO_DYDX": "dYdX에 입금",
       "DEPOSIT_TO_DESTINATION": "{DESTINATION_CHAIN}에 입금",
@@ -373,6 +375,8 @@
       "DEPOSIT_ALERT_SUBTITLE": "상태 확인",
       "WITHDRAWAL_ALERT_TITLE": "{DESTINATION_CHAIN}에서 보류 중인 {PENDING_WITHDRAWALS} 출금이 있습니다.",
       "WITHDRAWAL_ALERT_SUBTITLE": "상태 확인",
+      "TRANSFEROUT_ALERT_TITLE": "{PENDING_TRANSFERS} {TOKEN} 송금이 보류 중입니다.",
+      "TRANSFEROUT_ALERT_SUBTITLE": "상태 확인",
       "ABOUT_WALLETS": "지갑 정보",
       "ACKNOWLEDGE_TERMS": "약관 확인",
       "API_KEYS_NOT_FOUND": "API 키를 찾을 수 없습니다.",
@@ -743,8 +747,13 @@
       "PAYMENTS": "결제",
       "PENDING": "계류 중",
       "PERCENT_TRAIL": "{PERCENT}% 트레일링",
-      "PLACE_LIMIT_ORDER": "지정가 주문 실행",
-      "PLACE_MARKET_ORDER": "시장가 주문 실행",
+      "PLACE_LIMIT_ORDER": "지정가 주문하기",
+      "PLACE_MARKET_ORDER": "시장가 주문하기",
+      "PLACE_STOP_LIMIT_ORDER": "손절매 지정가 주문하기",
+      "PLACE_STOP_MARKET_ORDER": "손절매 주문하기",
+      "PLACE_TAKE_PROFIT_LIMIT_ORDER": "수익 실현 지정가 주문하기",
+      "PLACE_TAKE_PROFIT_MARKET_ORDER": "이익 환수 시장가 주문하기",
+      "PLACE_TRAILING_STOP_ORDER": "추적 손절매 주문하기",
       "PLACE_ORDER": "{ORDER} 실행",
       "PLACE_SIMPLE_TRADE": "{NAME}의 시장가 주문 실행",
       "PLACE_TRADE": "거래 실행",
@@ -814,7 +823,7 @@
       "VOLUME_24H": "24시간 거래량",
       "VOLUME": "거래량",
       "WANT_TO_AVOID_LIQUIDATION": "청산을 피하고 싶습니까?",
-      "YOUR_MARKET_POSITION": "귀하의 {MARKET}포지션",
+      "YOUR_MARKET_POSITION": "귀하의 {MARKET} 포지션",
       "YOUR_POSITION_WAS_LIQUIDATED": "귀하의 포지션이 청산되었습니다."
     },
     "LEAGUES": {
@@ -1104,7 +1113,10 @@
       "DIRECTLY_TRANSFER": "dYdX의 다른 계정으로 직접 자금을 전송하세요.",
       "ETH_ADDRESS": "이더리움 지갑 주소",
       "PLEASE_CONFIRM_ADDRESS": "계속하기 전에 원하는 주소인지 확인하시기 바랍니다.",
-      "SELECT_ADDRESS": "주소 입력 또는 선택"
+      "SELECT_ADDRESS": "주소 입력 또는 선택",
+      "ADDRESS_FIELD": "유효하지 않은 지갑 주소",
+      "INVALID_ADDRESS_TITLE": "유효하지 않은 지갑 주소",
+      "INVALID_ADDRESS_BODY": "유효한 dYdX 체인 주소를 입력하십시오."
     },
     "DEPOSIT_WITH_FIAT": {
       "BANXA_SUPPORT_LINK": "Banxa 지원",
@@ -1211,6 +1223,16 @@
         "AND_MAKER_MARKET_SHARE": "제조사 시장 점유율",
         "TRADING_VOLUME": "거래량"
     }
+  },
+  "CHAIN":{
+    "V3_MAINNET": "V3 메인넷",
+    "V3_GOERLI": "V3 스테이징",
+    "V4_DEVNET": "V4 데브 1",
+    "V4_DEVNET_2": "V4 데브 2",
+    "V4_DEVNET_3": "V4 데브 3",
+    "V4_DEVNET_4": "V4 데브 4",
+    "V4_STAGING": "V4 스테이징",
+    "V4_TESTNET2": "V4 퍼블릭 테스트넷 #2"
   },
   "ERRORS": {
     "GENERAL": {
