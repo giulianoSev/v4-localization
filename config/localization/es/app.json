@@ -85,6 +85,7 @@
       "DISCOUNT": "Descuento",
       "DISMISS": "Descartar",
       "DONE": "Hecho",
+      "DYDX_CHAIN": "Cadena dYdX",
       "EMAIL": "Correo electrónico",
       "ENDED": "Finalizado",
       "EQUITY": "Equidad",
@@ -366,6 +367,7 @@
     "ONBOARDING": {
       "INITIATED_DEPOSIT": "Depósito iniciado",
       "INITIATED_WITHDRAWAL": "Retiro iniciado",
+      "INITIATED_TRANSFEROUT": "Transferencia iniciada",
       "BRIDGING_TOKENS": "Tokens de puente",
       "DEPOSIT_TO_DYDX": "Depósito en dYdX",
       "DEPOSIT_TO_DESTINATION": "Depositar en {DESTINATION_CHAIN}",
@@ -373,6 +375,8 @@
       "DEPOSIT_ALERT_SUBTITLE": "Consulta el estado",
       "WITHDRAWAL_ALERT_TITLE": "Tienes {PENDING_WITHDRAWALS} retiro pendiente en {DESTINATION_CHAIN}.",
       "WITHDRAWAL_ALERT_SUBTITLE": "Consulta el estado",
+      "TRANSFEROUT_ALERT_TITLE": "Tienes una transferencia pendiente de {PENDING_TRANSFERS} {TOKEN}.",
+      "TRANSFEROUT_ALERT_SUBTITLE": "Consulta el estado",
       "ABOUT_WALLETS": "Acerca de las billeteras",
       "ACKNOWLEDGE_TERMS": "Conocer términos",
       "API_KEYS_NOT_FOUND": "Clave API no encontrada",
@@ -743,8 +747,13 @@
       "PAYMENTS": "Pagos",
       "PENDING": "Pendiente",
       "PERCENT_TRAIL": "{PERCENT}% Trail",
-      "PLACE_LIMIT_ORDER": "Colocar una orden \"Limit\"",
-      "PLACE_MARKET_ORDER": "Colocar una orden de mercado (Maker Order)",
+      "PLACE_LIMIT_ORDER": "Colocar limit order",
+      "PLACE_MARKET_ORDER": "Colocar orden de mercado",
+      "PLACE_STOP_LIMIT_ORDER": "Colocar limit order de detención",
+      "PLACE_STOP_MARKET_ORDER": "Colocar orden de detención de mercado",
+      "PLACE_TAKE_PROFIT_LIMIT_ORDER": "Colocar limit order de toma de ganancias",
+      "PLACE_TAKE_PROFIT_MARKET_ORDER": "Colocar orden de mercado de toma de ganancias ",
+      "PLACE_TRAILING_STOP_ORDER": "Colocar \"stop order\" de trailing",
       "PLACE_ORDER": "Lugar {ORDER}",
       "PLACE_SIMPLE_TRADE": "Realizar una orden de mercado para {NAME}",
       "PLACE_TRADE": "Realizar un trade",
@@ -848,8 +857,8 @@
       "LEGENDS_SUBHEADER": "Los influencers de las cripto compiten por premios en efectivo y el derecho de alardear.",
       "LEGENDS_EDUDAO_TESTNET_ONLY": "La competencia EduDAO trading solo se encuentra disponible en Testnet.",
       "LEGENDS_EDUDAO_VIEW_LEADERBOARD": "Ver tabla de posiciones",
-      "MIN_BALANCE": "Balance mínimo",
-      "MIN_EQUITY": "Capital mínimo",
+      "MIN_BALANCE": "Mín. Saldo",
+      "MIN_EQUITY": "Mín. Equidad",
       "NO_CHANGE": "Sin cambios",
       "NO_WINNER": "Aún no hay un ganador",
       "NOT_ELIGIBLE": "No es elegible para ganar un Hedgie",
@@ -1104,7 +1113,10 @@
       "DIRECTLY_TRANSFER": "Transferencia directa de fondos a otra cuenta en dYdX",
       "ETH_ADDRESS": "Dirección de la billetera de Ethereum",
       "PLEASE_CONFIRM_ADDRESS": "Confirma que esta es la dirección deseada antes de continuar.",
-      "SELECT_ADDRESS": "Ingresa o selecciona la dirección."
+      "SELECT_ADDRESS": "Ingresa o selecciona la dirección.",
+      "ADDRESS_FIELD": "Dirección de billetera no válida",
+      "INVALID_ADDRESS_TITLE": "Dirección de billetera no válida",
+      "INVALID_ADDRESS_BODY": "Ingresa una dirección válida de la cadena dYdX."
     },
     "DEPOSIT_WITH_FIAT": {
       "BANXA_SUPPORT_LINK": "Soporte de Banxa",
@@ -1205,7 +1217,22 @@
       "COPY_TO_CLIPBOARD": "Copiar en el portapapeles",
       "DONT_SHOW": "¡No le muestres esto a nadie!",
       "TAP_TO_REVEAL": "Toca para revelar"
+    },
+    "FEE_TIERS": {
+        "AND_EXCHANGE_MARKET_SHARE": "e intercambiar participación de mercado",
+        "AND_MAKER_MARKET_SHARE": "y participación de mercado del fabricante",
+        "TRADING_VOLUME": "Volumen de operaciones"
     }
+  },
+  "CHAIN":{
+    "V3_MAINNET": "V3 Red principal",
+    "V3_GOERLI": "V3 Simulacro",
+    "V4_DEVNET": "V4 Desarrollo 1",
+    "V4_DEVNET_2": "V4 Desarrollo 2",
+    "V4_DEVNET_3": "V4 Desarrollo 3",
+    "V4_DEVNET_4": "V4 Desarrollo 4",
+    "V4_STAGING": "V4 Simulacro",
+    "V4_TESTNET2": "V4 Red de prueba pública #2"
   },
   "ERRORS": {
     "GENERAL": {
